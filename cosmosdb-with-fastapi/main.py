@@ -6,7 +6,7 @@ from routes import router as todo_router
 
 config = dotenv_values(".env")
 app = FastAPI()
-DATABASE_NAME = "todo-db"
+DATABASE_NAME = "cosmos-py"
 CONTAINER_NAME = "todo-items"
 
 app.include_router(todo_router, tags=["todos"], prefix="/todos")
